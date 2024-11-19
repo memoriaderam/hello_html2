@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
     <link  
@@ -9,8 +10,8 @@
 			rel="stylesheet"
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
-		/>
-
+	/>
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
         <style>
             div.gallery {
               margin: 5px;
@@ -25,21 +26,50 @@
             
             div.gallery img {
               width: 1000px;
-              align-content: center;
+              
             }
             
             div.desc {
               padding: 15px;
-              text-align: center;
+              
             }
 
-            separ {
-
-            margin-bottom: 50px;
-            border: 1px solid #777;
+            .separ {
+            
+            height: 450px;
+            margin-top: 80px;
+            margin-bottom: 180px;
+            border: 0px solid #777;
 
             }
-        </style>
+
+            p.ex1 {
+
+                text-align: right;
+                font-size: 1.2vw;
+                width: 695px;
+       
+            }
+
+            p.ex2 {
+
+                text-align: left;
+                
+                font-size: 10px;
+                width: 695px;
+
+            }
+
+            .h3 {
+                margin-left: 2.0px;
+                line-height: 0.001;
+                font-family: Georgia, serif;
+                 font-size: 1.2vw;
+                background: black;
+                float: left;
+            }
+            
+            </style>
     <title>Protecto Instagram en BootStrap</title>
 </head>
 
@@ -89,7 +119,33 @@
 
     <!-- archivo de paginapruebas de contenido-->
 
-    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Caption:</h6>
+                    <textarea class="form-control" placeholder="Add the caption of your post here"
+                        id="floatingTextarea2"></textarea>
+                    <div class="row p-2">
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <!-- archivo de pagina-->
@@ -131,32 +187,13 @@
                     <div class="container text-center">
                         <div class="row align-items-start">
                           <div class="col-4">
-                            <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="450" height="350">
+                            <img src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg"  width="450" height="350">
                           </div>
                           <div class="col-4">
-                            <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="450" height="350">
+                            <img src="https://atomarpormundo.com/wp-content/uploads/2019/06/mejores-islas-de-croacia-2-7.jpg"  width="450" height="350">
                           </div>
                           <div class="col-4">
-                            <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="450" height="350">
-                          </div>
-                          
-                        </div>
-                      </div>
-                 
-                </div>   
-
-                <div class="grid text-center">
-
-                    <div class="container text-center">
-                        <div class="row align-items-start">
-                          <div class="col-4">
-                            <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="450" height="350">
-                          </div>
-                          <div class="col-4">
-                            <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="450" height="350">
-                          </div>
-                          <div class="col-4">
-                            <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="450" height="350">
+                            <img src="https://www.ole.com.ar/2020/05/27/JKRrE0N0M_860x575__1.jpg"  width="450" height="350">
                           </div>
                           
                         </div>
@@ -169,10 +206,29 @@
                     <div class="container text-center">
                         <div class="row align-items-start">
                           <div class="col-4">
-                            <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="450" height="350">
+                            <img src="https://www.sistemaimpulsa.com/blog/wp-content/uploads/2020/11/manten-a-tu-grupo-de-trabajo-unido2.jpg"  width="450" height="350">
                           </div>
                           <div class="col-4">
-                            <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="450" height="350">
+                            <img src="https://img.freepik.com/premium-photo/close-up-beautiful-young-black-woman-laughing-pointing-finger_33839-9188.jpg"  width="450" height="350">
+                          </div>
+                          <div class="col-4">
+                            <img src="https://efeagro.com/wp-content/uploads/2022/06/HomeAway-Eiffel-Tower-5.jpg"  width="450" height="350">
+                          </div>
+                          
+                        </div>
+                      </div>
+                 
+                </div>   
+
+                <div class="grid text-center">
+
+                    <div class="container text-center">
+                        <div class="row align-items-start">
+                          <div class="col-4">
+                            <img src="https://raisinglifelonglearners.com/wp-content/uploads/2021/05/Depositphotos_9152093_s-2019.jpg"  width="450" height="350">
+                          </div>
+                          <div class="col-4">
+                            <img src="https://geekytheory.com/content/images/2015/02/Code_feat.jpg"  width="450" height="350">
                           </div>
                           <div class="col-4">
                             <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="450" height="350">
@@ -193,100 +249,145 @@
 
         <div class="container text-center">
             <div class="row separ">
-              <div class="col">
-                1 of 2
+              <div class="col ">
+              
               </div>
               <div class="col">
-                <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="650" height="450">
+                <h3 class="h3">My Crazy dog Spark!</h3><p class="ex1">08/26</p>
+                <img src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg"  width="690" height="400">
+                <div><br><h3 class="h3">204  Likes</h3><br>
+                <p class="ex2">This is an example of a very good photo that you can post on instagram</p></div>
               </div>
               <div class="col">
-                3 of 3
+                
               </div>
             </div>
+
             <div class="row separ">
-              <div class="col">
-                1 of 3
+                <div class="col ">
+                
+                </div>
+                <div class="col">
+                  <h3 class="h3">This is the beach in Croatia </h3><p class="ex1">26/71</p>
+                  <img src="https://atomarpormundo.com/wp-content/uploads/2019/06/mejores-islas-de-croacia-2-7.jpg"  width="690" height="400">
+                  <div><br><h3 class="h3">154  Likes</h3><br>
+                  <p class="ex2">This is a becha in Crocia very good photo that you can post on instagram</p></div>
+                </div>
+                <div class="col">
+                  
+                </div>
               </div>
-              <div class="col">
-                <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="650" height="450">
+                
+              <div class="row separ">
+                <div class="col ">
+                
+                </div>
+                <div class="col">
+                  <h3 class="h3">Amazing Gol of Messi!</h3><p class="ex1">08/26</p>
+                  <img src="https://www.ole.com.ar/2020/05/27/JKRrE0N0M_860x575__1.jpg"  width="690" height="400">
+                  <div><br><h3 class="h3">1804  Likes</h3><br>
+                  <p class="ex2">This is an Amazing Gol of Messi in the Champions</p></div>
+                </div>
+                <div class="col">
+                  
+                </div>
               </div>
-              <div class="col">
-                3 of 3
+
+
+              <div class="row separ">
+                <div class="col ">
+                
+                </div>
+                <div class="col">
+                  <h3 class="h3">Work Environment</h3><p class="ex1">08/26</p>
+                  <img src="https://www.sistemaimpulsa.com/blog/wp-content/uploads/2020/11/manten-a-tu-grupo-de-trabajo-unido2.jpg"  width="690" height="400">
+                  <div><br><h3 class="h3">44  Likes</h3><br>
+                  <p class="ex2">This is an example of a very good photo that you can post on instagram</p></div>
+                </div>
+                <div class="col">
+                  
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="container text-center">
-            <div class="row separ">
-              <div class="col">
-                1 of 2
+
+
+              <div class="row separ">
+                <div class="col ">
+                
+                </div>
+                <div class="col">
+                  <h3 class="h3">My Crazy dog Spark!</h3><p class="ex1">07/36</p>
+                  <img src="https://img.freepik.com/premium-photo/close-up-beautiful-young-black-woman-laughing-pointing-finger_33839-9188.jpg"  width="690" height="400">
+                  <div><br><h3 class="h3">204  Likes</h3><br>
+                  <p class="ex2">This is an example of a very good photo that you can post on instagram</p></div>
+                </div>
+                <div class="col">
+                  
+                </div>
               </div>
-              <div class="col">
-                <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="650" height="450">
+
+              <div class="row separ">
+                <div class="col ">
+                
+                </div>
+                <div class="col">
+                  <h3 class="h3">Good mood encourages your health</h3><p class="ex1">01/87</p>
+                  <img src="https://efeagro.com/wp-content/uploads/2022/06/HomeAway-Eiffel-Tower-5.jpg"  width="690" height="400">
+                  <div><br><h3 class="h3">204  Likes</h3><br>
+                  <p class="ex2">This is an example of a very good photo that you can post on instagram</p></div>
+                </div>
+                <div class="col">
+                  
+                </div>
               </div>
-              <div class="col">
-                3 of 3
+
+              <div class="row separ">
+                <div class="col ">
+                
+                </div>
+                <div class="col">
+                  <h3 class="h3">The together Family</h3><p class="ex1">08/26</p>
+                  <img src="https://raisinglifelonglearners.com/wp-content/uploads/2021/05/Depositphotos_9152093_s-2019.jpg"  width="690" height="400">
+                  <div><br><h3 class="h3">10  Likes</h3><br>
+                  <p class="ex2">This is an example of a very good photo that you can post on instagram</p></div>
+                </div>
+                <div class="col">
+                  
+                </div>
               </div>
-            </div>
-            <div class="row separ">
-              <div class="col">
-                1 of 3
+
+
+              <div class="row separ">
+                <div class="col ">
+                
+                </div>
+                <div class="col">
+                  <h3 class="h3">Python is the bettest language of Programing</h3><p class="ex1">08/26</p>
+                  <img src="https://geekytheory.com/content/images/2015/02/Code_feat.jpg"  width="690" height="400">
+                  <div><br><h3 class="h3">2  Likes</h3><br>
+                  <p class="ex2">This is an example of a very good photo that you can post on instagram</p></div>
+                </div>
+                <div class="col">
+                  
+                </div>
               </div>
-              <div class="col">
-                <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="650" height="450">
+
+
+              <div class="row separ">
+                <div class="col ">
+                
+                </div>
+                <div class="col">
+                  <h3 class="h3">Evangeline Lilly is so Beautiful</h3><p class="ex1">08/26</p>
+                  <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="690" height="400">
+                  <div><br><h3 class="h3">2700  Likes</h3><br>
+                  <p class="ex2">This is an example of a very good photo that you can post on instagram</p></div>
+                </div>
+                <div class="col">
+                  
+                </div>
               </div>
-              <div class="col">
-                3 of 3
-              </div>
-            </div>
-          </div>
-          <div class="container text-center">
-            <div class="row separ">
-              <div class="col">
-                1 of 2
-              </div>
-              <div class="col">
-                <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="650" height="450">
-              </div>
-              <div class="col">
-                3 of 3
-              </div>
-            </div>
-            <div class="row separ">
-              <div class="col">
-                1 of 3
-              </div>
-              <div class="col">
-                <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="650" height="450">
-              </div>
-              <div class="col">
-                3 of 3
-              </div>
-            </div>
-          </div>
-          <div class="container text-center">
-            <div class="row separ">
-              <div class="col">
-                1 of 2
-              </div>
-              <div class="col">
-                <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="650" height="450">
-              </div>
-              <div class="col">
-                3 of 3
-              </div>
-            </div>
-            <div class="row separ">
-              <div class="col">
-                1 of 3
-              </div>
-              <div class="col">
-                <img src="https://images.tvtoday.de/files/images/201807/1/evangeline-lilly,200256_aufmacher_640.jpg"  width="650" height="450">
-              </div>
-              <div class="col">
-                3 of 3
-              </div>
-            </div>
-          </div>
+          
+        </div>
         
 
         
